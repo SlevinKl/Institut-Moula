@@ -15,6 +15,9 @@ Event.destroy_all
 User.destroy_all
 
 #### user creation
-user_rayane = User.new(email: "rayane@moula.fr", password: "azerty", first_name: "Rayane", last_name: "Lewagon")
+user_rayane = User.new(email: "rayane@moula.fr", password: "azerty", first_name: "Rayane", last_name: "Moula", phone: "+33672839517", address: "10 rue boulot 75010 Paris", admin: true)
 user_rayane.avatar.attach(io: rayane, filename: "rayane")
 user_rayane.save!
+
+prestation_a = Event.new(title: "Manucure express", content: "", price: "30$", category: "Mains", user: user_rayane)
+prestation_a.save!
