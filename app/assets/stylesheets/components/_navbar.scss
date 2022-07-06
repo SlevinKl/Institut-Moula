@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 10px;
+  padding: 10px 20px;
 
 }
 
@@ -18,9 +18,27 @@
   ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    text-align: center;
   }
   li{
     margin: 15px;
 
+  }
+}
+
+.header-text {
+  position: relative;
+  top: 25%;
+  margin-left: 90px;
+  padding: 20px;
+  width: 490px;
+  background-color: green;
+  h1{
+    margin-bottom: 25px;
+  }
+  button {
+    padding: 5px 20px;
+    border: none;
   }
 }
