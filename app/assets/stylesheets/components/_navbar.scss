@@ -1,16 +1,26 @@
-.navbar {
-  background: #FEFCF9;
-  justify-content: space-between;
+.header {
+  background-image: url("https://res.cloudinary.com/do9ctd3bd/image/upload/v1657121080/Screenshot_2022-07-06_at_16.32.45_syoi3f_zyjquj.png");
+  height: 100vh;
 }
 
-.logo{
-  flex-grow: 0;
+.nav-container {
+  background: #FEFCF9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+
 }
 
 .menu {
-  width: 40px;
-}
 
-.searh {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li{
+    margin: 15px;
 
+  }
 }
