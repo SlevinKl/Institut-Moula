@@ -1,9 +1,13 @@
 class PrestationsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index]
-  before_action :find_prestation, only: %i[edit update destroy]
+  before_action :find_prestation, only: %i[show edit update destroy]
   before_action :user, only: %i[new create edit update destroy]
 
   def index
+    @prestations = Prestation.all
+  end
+
+  def show
     @prestations = Prestation.all
   end
 
@@ -37,7 +41,7 @@ class PrestationsController < ApplicationController
   private
 
   def prestation_params
-    params.require(:prestation).permit(:title, :content, :price, :category)
+    params.require(:prestation).permit(:title, :content, :price, :category, :image)
   end
 
   def find_prestation
