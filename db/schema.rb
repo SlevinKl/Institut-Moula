@@ -45,7 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_28_151944) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "content"
-    t.date "date", default: "2022-06-28"
+    t.date "date", default: "2022-07-06"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
