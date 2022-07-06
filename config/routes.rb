@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "about", to: "pages#about", as: "about"
   get "dashboard", to: "pdashboards#display", as: "dashboard"
-  resources :prestations, only: %i[index new create edit update destroy]
+  resources :prestations, only: %i[index new create show edit update destroy]
   resources :articles, only: %i[index new create show edit update destroy]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
