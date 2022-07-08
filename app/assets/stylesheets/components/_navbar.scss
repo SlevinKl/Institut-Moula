@@ -1,16 +1,11 @@
-.header {
-  background-image: url("https://res.cloudinary.com/do9ctd3bd/image/upload/v1657121080/Screenshot_2022-07-06_at_16.32.45_syoi3f_zyjquj.png");
-  height: 100vh;
-}
-
 .nav-container {
-  background: #FEFCF9;
+  position: sticky;
+  background-color: rgba(218, 216, 216, 0.683);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   padding: 10px 20px;
-
+  width: 100%;
 }
 
 .menu {
@@ -21,8 +16,18 @@
     padding: 0;
     text-align: center;
   }
-  li{
+  li {
     margin: 15px;
+    a{
+    text-decoration: none;
+    color: #000;
+    }
+  }
 
+  li:hover{
+    a{
+      color: green;
+    }
+    border-bottom: 1px solid #000;
   }
 }

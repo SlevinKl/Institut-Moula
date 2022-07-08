@@ -1,11 +1,29 @@
 // Specific CSS for your home-page
+.header {
+  display: flex;
+  // background-image: url("https://res.cloudinary.com/do9ctd3bd/image/upload/v1657121080/Screenshot_2022-07-06_at_16.32.45_syoi3f_zyjquj.png");
+  height: 100vh;
+}
+
+.header-content{
+  background-color: #cbdbc5;
+  width: 50%;
+}
+.white {
+  background-color: #ffff;
+}
+
+.header-img {
+  
+}
+
 .header-text {
   position: relative;
   top: 25%;
   margin-left: 90px;
   padding: 20px;
   width: 490px;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.028);
   h1{
     margin-bottom: 25px;
   }
