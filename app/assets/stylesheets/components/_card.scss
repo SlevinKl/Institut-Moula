@@ -1,0 +1,15 @@
+.card-prest {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  padding: calc(32px - 1px) calc(32px - 1px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  ul {
+
+    li {
+      list-style: none;
+    }
+  }
+}
