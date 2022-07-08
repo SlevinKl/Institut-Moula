@@ -1,2 +1,21 @@
-<h1>Prestations#index</h1>
-<p>Find me in app/views/prestations/index.html.erb</p>
+<div class="container prestations">
+  <h1>Nos Services</h1>
+
+  <div class="category">
+
+  </div>
+
+  <div class="cards-prest">
+    <% @prestations.each do |prestation|  %>
+        <div class="card-prest">
+          <ul>
+            <li><%= prestation.title %></li>
+            <li><%= prestation.time %></li>
+            <li><%= prestation.price %></li>
+            <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+          </ul>
+        </div>
+    <% end %>
+  </div>
+
+</div>

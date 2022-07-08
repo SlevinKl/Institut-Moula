@@ -8,7 +8,6 @@ class PrestationsController < ApplicationController
   end
 
   def show
-    @prestations = Prestation.all
   end
 
   def new
