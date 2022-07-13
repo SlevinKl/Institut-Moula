@@ -1,6 +1,9 @@
 .nav-container {
+  height: 100px;
+  font-size: 15px;
+  font-weight: 300;
   position: sticky;
-  background-color: rgba(218, 216, 216, 0.683);
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,26 +11,28 @@
   width: 100%;
 }
 
-.menu {
-
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    text-align: center;
+.logo{
+  width: 100%;
+  .logo-img {
+    width: 250px;
+    height: 100%;
   }
-  li {
-    margin: 15px;
-    a{
+}
+
+.menu {
+  width: 100%;
+    display: flex;
+    text-align: center;
+
+  .btn-nav {
+    width: 25%;
+    padding: 40px 20px;
     text-decoration: none;
     color: #000;
-    }
-  }
 
-  li:hover{
-    a{
-      color: green;
-    }
-    border-bottom: 1px solid #000;
+  }
+  .btn-nav:hover{
+    color: #cbdbc5;
+    transition-duration: 500ms;
   }
 }

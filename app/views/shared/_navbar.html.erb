@@ -1,16 +1,11 @@
 <nav class="nav-container px-3">
   <div class="logo">
-    <h3>Institut Moula</h3>
+      <%= image_tag 'https://arnaudvallee.com/thumbs/1200x800c/2016-02/1456305881_logoinstitutdebeaute.jpg', class: 'logo-img'%>
   </div>
     <div class="menu">
-      <ul>
-        <li><%= link_to 'ACCEUIL', root_path  %></li>
-        <li><%= link_to 'PRESTATIONS', prestations_path %></li>
-        <li><%= link_to 'À PROPOS', about_path  %></li>
-        <li><%= link_to 'BLOG', articles_path  %></li>
-      </ul>
+      <%= link_to 'ACCEUIL', root_path, class: 'btn-nav' %></li>
+      <%= link_to 'PRESTATIONS', prestations_path, class: 'btn-nav' %></li>
+      <%= link_to 'À PROPOS', about_path, class: 'btn-nav' %></li>
+      <%= link_to 'BLOG', articles_path, class: 'btn-nav' %></li>
     </div>
-      <div class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
 </nav>
