@@ -20,12 +20,28 @@
   height: 608px;
   object-fit: cover;
   position: absolute;
-  margin-left: 60px;
-  margin-top: 60px;
+  left: 60px;
+  top: 145px;
   border: 15px  solid #FFFF;
   z-index: 100;
 }
-
+.hover-img {
+  background-color: transparent;
+  width: 847px;
+  height: 608px;
+  object-fit: cover;
+  position: absolute;
+  left: 60px;
+  top: 145px;
+  border: 15px  solid #FFFF;
+  z-index: 110;
+  transition-duration: 1s;
+}
+.hover-img:hover {
+  background-color: white;
+  opacity: 0.2;
+  transition-duration: 1s;
+}
 .header-text {
   padding: 40px;
   position: absolute;
