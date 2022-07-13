@@ -1,34 +1,50 @@
 // Specific CSS for your home-page
 .header {
   display: flex;
-  // background-image: url("https://res.cloudinary.com/do9ctd3bd/image/upload/v1657121080/Screenshot_2022-07-06_at_16.32.45_syoi3f_zyjquj.png");
   height: 100vh;
 }
 
 .header-content{
-  background-color: #cbdbc5;
+
   width: 50%;
 }
 .white {
   background-color: #ffff;
 }
 
+.green {
+  background-color: #cbdbc5;
+}
+
 .header-img {
-  
+  width: 847px;
+  height: 608px;
+  object-fit: cover;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 60px;
+  border: 15px  solid #FFFF;
+  z-index: 100;
 }
 
 .header-text {
-  position: relative;
-  top: 25%;
-  margin-left: 90px;
-  padding: 20px;
-  width: 490px;
-  background-color: rgba(0, 128, 0, 0.028);
+  padding: 40px;
+  position: absolute;
+  border: 15px  solid #FFFF;
+  z-index: 200;
+  background-color: gainsboro;
+  width: 415px;
+  height: 455px;
+  top: 230px;
+  left: 780px;
+}
+
+.content-text {
   h1{
-    margin-bottom: 25px;
+    font-size: 60px;
+    .grey{
+      color: #6B6B6B;
+    }
   }
-  button {
-    padding: 5px 20px;
-    border: none;
-  }
+
 }
