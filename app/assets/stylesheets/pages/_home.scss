@@ -5,7 +5,6 @@
 }
 
 .header-content{
-
   width: 50%;
 }
 .white {
@@ -33,18 +32,32 @@
   border: 15px  solid #FFFF;
   z-index: 200;
   background-color: gainsboro;
-  width: 415px;
-  height: 455px;
+  width: 455px;
+  height: 415px;
   top: 230px;
   left: 780px;
+
+  a{
+    text-decoration: none;
+
+  }
 }
 
-.content-text {
-  h1{
-    font-size: 60px;
-    .grey{
-      color: #6B6B6B;
-    }
-  }
+.content-text{
+  margin-bottom: 45px;
+}
 
+
+.first-h1 {
+  line-height: normal;
+  color: #6B6B6B;
+  font-weight: bold;
+  letter-spacing: -2px;
+  vertical-align: baseline;
+  line-height: normal;
+
+}
+
+.second-span{
+  color: #000;
 }
