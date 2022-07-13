@@ -1,21 +1,99 @@
-<div class="container prestations">
-  <h1>Nos Services</h1>
+<div class="prest-page">
+  <div class="container prestations">
+    <h1>Nos Services</h1>
 
-  <div class="category">
+      <div class="category">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="visage-tab" data-bs-toggle="tab" data-bs-target="#visage" type="button" role="tab" aria-controls="visage" aria-selected="true">Visage</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="corp-tab" data-bs-toggle="tab" data-bs-target="#corp" type="button" role="tab" aria-controls="corp" aria-selected="false">Corp</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mains-tab" data-bs-toggle="tab" data-bs-target="#mains" type="button" role="tab" aria-controls="mains" aria-selected="false">Mains</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pieds-tab" data-bs-toggle="tab" data-bs-target="#pieds" type="button" role="tab" aria-controls="pieds" aria-selected="false">Pieds</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="epilations-tab" data-bs-toggle="tab" data-bs-target="#epilations" type="button" role="tab" aria-controls="epilations" aria-selected="false">Epilations</button>
+          </li>
+        </ul>
+      </div>
 
-  </div>
-
-  <div class="cards-prest">
-    <% @prestations.each do |prestation|  %>
-        <div class="card-prest">
-          <ul>
-            <li><%= prestation.title %></li>
-            <li><%= prestation.time %></li>
-            <li><%= prestation.price %></li>
-            <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
-          </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="visage" role="tabpanel" aria-labelledby="visage-tab">
+          <div class="cards-prest">
+            <% @prestations_visage.each do |prestation|  %>
+                <div class="card-prest">
+                  <ul>
+                    <li><%= prestation.title %></li>
+                    <li><%= prestation.time %></li>
+                    <li><%= prestation.price %></li>
+                    <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+                  </ul>
+                </div>
+            <% end %>
+          </div>
         </div>
-    <% end %>
-  </div>
+        <div class="tab-pane fade" id="corp" role="tabpanel" aria-labelledby="corp-tab">
+          <div class="cards-prest">
+            <% @prestations_corp.each do |prestation|  %>
+                <div class="card-prest">
+                  <ul>
+                    <li><%= prestation.title %></li>
+                    <li><%= prestation.time %></li>
+                    <li><%= prestation.price %></li>
+                    <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+                  </ul>
+                </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="mains" role="tabpanel" aria-labelledby="mains-tab">
+            <div class="cards-prest">
+              <% @prestations_mains.each do |prestation|  %>
+                  <div class="card-prest">
+                    <ul>
+                      <li><%= prestation.title %></li>
+                      <li><%= prestation.time %></li>
+                      <li><%= prestation.price %></li>
+                      <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+                    </ul>
+                  </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pieds" role="tabpanel" aria-labelledby="pieds-tab">
+            <div class="cards-prest">
+              <% @prestations_pieds.each do |prestation|  %>
+                  <div class="card-prest">
+                    <ul>
+                      <li><%= prestation.title %></li>
+                      <li><%= prestation.time %></li>
+                      <li><%= prestation.price %></li>
+                      <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+                    </ul>
+                  </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="epilations" role="tabpanel" aria-labelledby="epilations-tab">
+          <div class="cards-prest">
+            <% @prestations_epilations.each do |prestation|  %>
+                <div class="card-prest">
+                  <ul>
+                    <li><%= prestation.title %></li>
+                    <li><%= prestation.time %></li>
+                    <li><%= prestation.price %></li>
+                    <li><%= link_to 'Prendre rendez-vous', contact_path, class: "btn btn-primary" %></li>
+                  </ul>
+                </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
 
+  </div>
 </div>

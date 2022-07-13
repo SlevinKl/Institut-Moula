@@ -5,6 +5,11 @@ class PrestationsController < ApplicationController
 
   def index
     @prestations = Prestation.all
+    @prestations_visage = @prestations.select{ |prestation| prestation.category == 'Visage' }
+    @prestations_corp = @prestations.select{ |prestation| prestation.category == 'Corp' }
+    @prestations_mains = @prestations.select{ |prestation| prestation.category == 'Mains' }
+    @prestations_pieds = @prestations.select{ |prestation| prestation.category == 'Pieds' }
+    @prestations_epilations = @prestations.select{ |prestation| prestation.category == 'Epilations' }
   end
 
   def show
