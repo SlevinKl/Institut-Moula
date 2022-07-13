@@ -3,6 +3,26 @@
   display: flex;
   height: 100vh;
 }
+.social-media{
+  width: 24px;
+  height: 116px;
+  justify-self: end;
+  margin-right: 34px;
+  align-self: center;
+  margin-bottom: 2px;
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  pointer-events: auto;
+  right: 0;
+  position: absolute;
+  list-style: none;
+
+  a {
+    padding-top: 75px;
+    color: #000;
+  }
+
+}
 
 .header-content{
   width: 50%;
@@ -45,17 +65,17 @@
 .header-text {
   padding: 40px;
   position: absolute;
-  border: 15px  solid #FFFF;
+  border: 15px solid #FFFF;
   z-index: 200;
   background-color: gainsboro;
-  width: 455px;
-  height: 415px;
+  width: 431px;
+  height: 379px;
   top: 230px;
   left: 780px;
 
   a{
     text-decoration: none;
-
+    color: #6B6B6B;
   }
 }
 
