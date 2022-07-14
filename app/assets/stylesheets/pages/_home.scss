@@ -6,6 +6,26 @@
     text-decoration: none;
   }
 }
+.social-media{
+  width: 24px;
+  height: 116px;
+  justify-self: end;
+  margin-right: 34px;
+  align-self: center;
+  margin-bottom: 2px;
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  pointer-events: auto;
+  right: 0;
+  position: absolute;
+  list-style: none;
+
+  a {
+    padding-top: 75px;
+    color: #000;
+  }
+
+}
 
 .header-content{
   width: 50%;
