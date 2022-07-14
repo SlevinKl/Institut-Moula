@@ -1,26 +1,19 @@
 <header class="header">
-  <%# <div class="header-text">
-      <h1>Bienvenue à l'institut de Beauté Moula</h1>
-      <p>
-        Nous sommes là pour tous vos besoins beauté
-      </p>
-      <button>Reserver</button>
-  </div> %>
 
   <div class="header-content white">
-    <div class="hover-img"></div>
+    <div class="over-img"></div>
     <%= image_tag "https://res.cloudinary.com/do9ctd3bd/image/upload/v1657299255/d99169_4713498713044ad7bf124ab3d6b0c51c_mv2_d_3840_5760_s_4_2_1_b0e0h0.webp", class:"header-img" %>
+    <%= image_tag('svg-components/image-header.svg', class: 'svg-header') %>
   </div>
   <div class="header-content green">
     <div class="header-text">
       <div class="content-text">
         <h1 class="first-h1"><span class="first-span"> NOUS CHANGEONS LE </span> <br> <span class="second-span"> MONDE UN OEIL <br> À LA FOIS</span> </h1>
       </div>
-<<<<<<< HEAD
       <%= link_to 'Prendre rendez-vous', contact_path, class: 'a-header' %>
-=======
-        <%= link_to 'Prendre rendez-vous', contact_path, class: 'btn-nav' %></li><i class="fa-solid fa-arrow-right-long mx-3"></i>
->>>>>>> master
+      <%= link_to contact_path do %>
+        <%= image_tag('svg-components/arrow-rdv.svg', class: 'arrow') %>
+      <% end %>
     </div>
   </div>
     <div class="social-media">
