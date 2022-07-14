@@ -29,6 +29,7 @@
 
 .header-content{
   width: 50%;
+  height: 95vh;
 }
 
 .white {
@@ -43,7 +44,7 @@
     border: 15px  solid #FFFF;
     z-index: 100;
   }
-  .hover-img {
+  .over-img {
     background-color: transparent;
     width: 847px;
     height: 608px;
@@ -59,6 +60,12 @@
       opacity: 0.2;
       transition-duration: 1s;
     }
+  }
+  .svg-header{
+    position: absolute;
+    width: 765px;
+    top: 49%;
+    right: 51%;
   }
 }
 
@@ -100,6 +107,15 @@
       &:hover{
         transition-duration: 0.4s;
         color: #6B6B6B;
+      }
+    }
+    .arrow{
+      width: 70px;
+      height: 34px;
+      transform: rotate(90deg);
+      &:hover{
+        transition-duration: 0.4s;
+        filter: invert(10%) sepia(10%) saturate(1000%) hue-rotate(10deg) brightness(10%) contrast(10%);
       }
     }
   }
