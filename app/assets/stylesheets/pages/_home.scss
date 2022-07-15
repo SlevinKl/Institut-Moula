@@ -7,34 +7,7 @@
   }
 }
 
-.social-media{
-  width: 24px;
-  height: 116px;
-  justify-self: end;
-  margin-right: 34px;
-  align-self: center;
-  margin-bottom: 2px;
-  position: sticky;
-  align-items: center;
-  grid-area: 1 / 1 / 2 / 2;
-  pointer-events: auto;
-  right: 0;
-  position: absolute;
-  list-style: none;
 
-  .social-icon {
-    // margin-top: 15px;
-    color: #000;
-    cursor: pointer;
-    transition: .5s;
-  }
-
-  .social-icon:hover{
-    color: #6B6B6B;
-    font-size: 25px;
-    transition: .5s;
-  }
-}
 
 
 .header-content{

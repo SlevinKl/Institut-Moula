@@ -1,0 +1,19 @@
+.social-media{
+  text-align: end;
+  position: sticky;
+  bottom: 50%;
+  z-index: 1000;
+  margin-right: 55px;
+
+  .social-icon {
+    margin-top: 10px;
+    color: #000;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .social-icon:hover{
+    color: #6B6B6B;
+    transition: .5s;
+  }
+}
