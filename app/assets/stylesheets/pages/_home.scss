@@ -6,6 +6,7 @@
     text-decoration: none;
   }
 }
+
 .social-media{
   width: 24px;
   height: 116px;
@@ -33,7 +34,6 @@
     font-size: 25px;
     transition: .5s;
   }
-
 }
 
 
@@ -128,5 +128,29 @@
         filter: invert(10%) sepia(10%) saturate(1000%) hue-rotate(10deg) brightness(10%) contrast(10%);
       }
     }
+  }
+}
+.content-body{
+  display: flex;
+  height: 100vh;
+}
+
+.grey {
+  background-color: #E8E6E6;
+  position: relative;
+  .svg-home{
+    position: absolute;
+    top: 25px;
+    left: 190px;
+  }
+}
+
+.white2 {
+  background-color: #ffff;
+  position: relative;
+  .yeux1{
+    position: absolute;
+    top: 25px;
+    left: 190px;
   }
 }
