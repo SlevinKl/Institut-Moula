@@ -121,3 +121,27 @@
   }
 
 }
+.content-body{
+  display: flex;
+  height: 100vh;
+}
+
+.grey {
+  background-color: #E8E6E6;
+  position: relative;
+  .svg-home{
+    position: absolute;
+    top: 25px;
+    left: 190px;
+  }
+}
+
+.white2 {
+  background-color: #ffff;
+  position: relative;
+  .yeux1{
+    position: absolute;
+    top: 25px;
+    left: 190px;
+  }
+}
