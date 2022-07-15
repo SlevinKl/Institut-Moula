@@ -20,9 +20,17 @@
   position: absolute;
   list-style: none;
 
-  a {
-    padding-top: 75px;
+  li {
+    margin-top: 15px;
     color: #000;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  li:hover{
+    color: #6B6B6B;
+    font-size: 25px;
+    transition: .5s;
   }
 
 }
@@ -119,5 +127,4 @@
       }
     }
   }
-
 }
