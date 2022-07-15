@@ -1,8 +1,8 @@
-<nav class="nav-container px-3">
-  <div class="logo">
+<nav class="nav-container px-3" data-controller="navbar">
+  <div class="logo" data>
       <%= image_tag 'https://arnaudvallee.com/thumbs/1200x800c/2016-02/1456305881_logoinstitutdebeaute.jpg', class: 'logo-img'%>
   </div>
-    <div class="menu">
+    <div class="menu" data-action="load->navbar#load" data-navbar-target="btn">
       <%= link_to 'ACCEUIL', root_path, class: 'btn-nav' %></li>
       <%= link_to 'PRESTATIONS', prestations_path, class: 'btn-nav' %></li>
       <%= link_to 'À PROPOS', about_path, class: 'btn-nav' %></li>
