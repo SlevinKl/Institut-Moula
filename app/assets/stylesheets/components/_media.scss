@@ -5,15 +5,15 @@
   z-index: 1000;
   margin-right: 55px;
 
+
   .social-icon {
     margin-top: 10px;
     color: #000;
     cursor: pointer;
     transition: .5s;
+    font-size: 25px;
   }
-
-  .social-icon:hover{
-    color: #6B6B6B;
-    transition: .5s;
+  .fa-instagram{
+    border-radius: 20px;
   }
 }
