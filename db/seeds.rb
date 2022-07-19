@@ -7,8 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "open-uri"
 
-#### URL avatar
-rayane = URI.open("https://drive.google.com/file/d/1ZuddiOl9Hadn0TDFMaVHIhuETZVkS5gN/view?usp=sharing")
+
 
 #### URL image for prestation
 radio = URI.open("https://pur-paris.com/wp-content/uploads/2020/06/IMG_3877-1-300x300.jpg")
@@ -34,7 +33,6 @@ user_rayane = User.new(email: "rayane@moula.fr", password: "azertyuiop^$",
                       first_name: "Rayane", last_name: "Moula",
                       phone: "+33672839517", address: "10 rue boulot 75010 Paris",
                       admin: true)
-user_rayane.avatar.attach(io: rayane, filename: "rayane")
 user_rayane.save!
 
 #### prestation creation
