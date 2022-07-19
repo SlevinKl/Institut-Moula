@@ -5,7 +5,7 @@ class CreatePrestations < ActiveRecord::Migration[7.0]
       t.text :content
       t.string :price
       t.string :category
-      t.datetime :date
+      t.string :time
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
