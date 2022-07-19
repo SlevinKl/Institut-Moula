@@ -58,23 +58,24 @@
     border: 15px  solid #FFFF;
     z-index: 200;
     background-color: gainsboro;
-    width: 455px;
-    height: 415px;
+    height: auto;
+    width:500px;
     top: 230px;
     left: 780px;
 
     .content-text{
-      margin-bottom: 45px;
-      font-size: 70px;
+      margin-bottom: 30px;
       .first-h1 {
+        font-size: 60px;
+        font-family: $font-footer;
+        font-weight: bold;
         line-height: normal;
         color: #6B6B6B;
-        font-weight: bold;
+        letter-spacing: inherit;
         letter-spacing: -2px;
         vertical-align: baseline;
         line-height: normal;
       }
-
       .second-span{
         color: #212121;
       }
