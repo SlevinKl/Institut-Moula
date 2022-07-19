@@ -1,0 +1,37 @@
+.input-send{
+  color: #F1F1F1F1;
+  font-family: $footer-font;
+  font-size: 14px;
+  background-color: transparent;
+  border: solid 1px #F1F1F1F1;
+
+  &:hover{
+    background-color: #546650;
+  }
+}
+
+.input-send:focus{
+  color: #F1F1F1F1;
+  background-color: #546650;
+}
+
+.input-send::placeholder{
+  color: #F1F1F1F1 !important;
+  font-family: $footer-font;
+  font-size: 12px;
+}
+
+.btn-send{
+  font-family: $footer-font;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  text-align: end;
+  color: #AABFA4;
+  background-color: transparent;
+  border: none;
+  &:hover{
+    transition-duration: 0,4s;
+    color: #F1F1F1F1;
+  }
+}

@@ -3,8 +3,8 @@
   <div class="header-footer">
     <h3>CONTACT</h3>
     <div class="btn-footer">
-      <%= link_to 'Prendre rendez-vous', contact_path, class: 'a-footer' %>
-      <%= link_to contact_path do %>
+      <%= link_to 'Prendre rendez-vous', new_contact_path, class: 'a-footer' %>
+      <%= link_to new_contact_path do %>
       <%= image_tag('svg-components/arrow-rdv.svg', class: 'arrow') %>
       <% end %>
     </div>
@@ -27,14 +27,14 @@
 
       </div>
     </div>
-
+  <%# create contact %>
     <div class="form-footer">
-      <%#= simple_form_for(@contact) do |f| %>
-        <%#= f.input :name, placeholder: "Nom"%>
-        <%#= f.input :email, placeholder: "Email" %>
-        <%#= f.input :content, placeholder: "Message" %>
-        <%#= f.submit 'Envoyer', class: 'btn-send' %>
-      <%# end %>
+      <%= simple_form_for(@contact) do |f| %>
+        <%= f.input :name, placeholder: "Nom", label: false, input_html: { class: 'input-send' } %>
+        <%= f.input :email, placeholder: "Email", label: false, input_html: { class: 'input-send' } %>
+        <%= f.input :content, placeholder: "Message", label: false, input_html: { class: 'input-send' } %>
+        <%= f.submit 'Envoyer', class: 'btn-send' %>
+      <% end %>
     </div>
   </div>
   <%# Footer of the Footer %>
