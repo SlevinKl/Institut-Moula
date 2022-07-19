@@ -9,3 +9,5 @@ application.register("hello", HelloController)
 
 import NavbarController from "./navbar_controller.js"
 application.register("navbar", NavbarController)
+
+
