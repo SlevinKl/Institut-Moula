@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
   before_action :user, only: %i[new create edit update destroy]
 
   def index
+    @contact = Contact.new
     @articles = Article.all
   end
 

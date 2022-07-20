@@ -15,6 +15,9 @@
     <%= render "shared/flashes" %>
     <%= yield %>
     <%= render "shared/media" %>
-    <%= render "shared/footer" %>
+    <% if current_page?(root_path) || current_page?(prestations_path) || current_page?(articles_path) %>
+        <%= render "shared/footer" %>
+      <% end %>
+
   </body>
 </html>

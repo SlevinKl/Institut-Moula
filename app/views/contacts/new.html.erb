@@ -1,0 +1,6 @@
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.input :name, placeholder: "Nom", label: false, input_html: { class: 'input-send' } %>
+  <%= f.input :email, placeholder: "Email", label: false, input_html: { class: 'input-send' } %>
+  <%= f.input :content, placeholder: "Message", label: false, input_html: { class: 'input-send' } %>
+  <%= f.submit 'Envoyer' %>
+<% end %>
