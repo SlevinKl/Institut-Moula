@@ -4,6 +4,7 @@ class PrestationsController < ApplicationController
   before_action :user, only: %i[new create edit update destroy]
 
   def index
+    @contact = Contact.new
     @prestations = Prestation.all
     @prestations_visage = @prestations.select{ |prestation| prestation.category == 'Visage' }
     @prestations_corp = @prestations.select{ |prestation| prestation.category == 'Corp' }
