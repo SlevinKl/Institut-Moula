@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  skip_before_action :authenticate_user!, only: %i[new]
+  skip_before_action :authenticate_user!, only: %i[new create]
   before_action :find_contact, only: %i[destroy]
 
   def new
@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(article_params)
+    @contact = Contact.new(contact_params)
     if @contact.save
       flash[:alert] = "Message envoyé"
       redirect_to root_path
@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:article).permit(:name, :email, :content)
+    params.require(:contact).permit(:name, :email, :content)
   end
 
   def find_article
