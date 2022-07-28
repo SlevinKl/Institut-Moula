@@ -5,10 +5,15 @@
 }
 
 .prest-page {
-  padding: 20px 0;
+  padding: 18px 0;
+  .prestations{
+    h1{
+      font-size: 40px;
+    }
+  }
 }
 .category{
-  margin-top: 50px ;
+  margin-top: 60px ;
   .nav-tabs{
     border: 0;
     .nav-item{
