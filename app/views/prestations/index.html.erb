@@ -1,6 +1,6 @@
 <div class="prest-page">
   <div class="container prestations">
-    <h1>Nos Services</h1>
+    <h1>NOS SERVICES</h1>
 
       <div class="category">
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
@@ -28,7 +28,7 @@
             <% @prestations_visage.each do |prestation|  %>
                 <div class="card-prest">
                   <ul>
-                    <li><%= prestation.title %></li>
+                    <li class="titleprest"><%= prestation.title %></li>
                     <li><%= prestation.time %></li>
                     <li><%= prestation.price %></li>
                     <li><%= link_to 'Prendre rendez-vous', new_contact_path, class: "btn" %></li>
@@ -42,7 +42,7 @@
             <% @prestations_corp.each do |prestation|  %>
                 <div class="card-prest">
                   <ul>
-                    <li><%= prestation.title %></li>
+                    <li class="titleprest"><%= prestation.title %></li>
                     <li><%= prestation.time %></li>
                     <li><%= prestation.price %></li>
                     <li><%= link_to 'Prendre rendez-vous', new_contact_path, class: "btn" %></li>
@@ -56,7 +56,7 @@
               <% @prestations_mains.each do |prestation|  %>
                   <div class="card-prest">
                     <ul>
-                      <li><%= prestation.title %></li>
+                      <li class="titleprest"><%= prestation.title %></li>
                       <li><%= prestation.time %></li>
                       <li><%= prestation.price %></li>
                       <li><%= link_to 'Prendre rendez-vous', new_contact_path, class: "btn" %></li>
@@ -70,7 +70,7 @@
               <% @prestations_pieds.each do |prestation|  %>
                   <div class="card-prest">
                     <ul>
-                      <li><%= prestation.title %></li>
+                      <li class="titleprest"><%= prestation.title %></li>
                       <li><%= prestation.time %></li>
                       <li><%= prestation.price %></li>
                       <li><%= link_to 'Prendre rendez-vous', new_contact_path, class: "btn" %></li>
@@ -84,7 +84,7 @@
             <% @prestations_epilations.each do |prestation|  %>
                 <div class="card-prest">
                   <ul>
-                    <li><%= prestation.title %></li>
+                    <li class="titleprest"><%= prestation.title %></li>
                     <li><%= prestation.time %></li>
                     <li><%= prestation.price %></li>
                     <li><%= link_to 'Prendre rendez-vous', new_contact_path, class: "btn" %></li>
