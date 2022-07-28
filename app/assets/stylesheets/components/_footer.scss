@@ -74,13 +74,26 @@
   }
 
   .footer-footer{
+    .last-footer{
+      display: flex;
+      justify-content: space-between;
+      .created-by{
+        font-family: $footer-font;
+        font-size: 14px;
+        a{
+          color: #F9F9F9;
+        }
+      }
 
+      .medias-footer{
+        letter-spacing: 4px;
+        margin-right: 60px;
+        font-size: 18px;
+      }
+    }
   }
 }
 
-@media (min-width: 100px) and (max-width: 575px) {
-
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

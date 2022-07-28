@@ -3,8 +3,6 @@
   position: sticky;
   bottom: 50%;
   z-index: 1000;
-  margin-right: 55px;
-
 
   .social-icon {
     margin-top: 10px;
@@ -15,5 +13,28 @@
   }
   .fa-instagram{
     border-radius: 20px;
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .social-media{
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .social-media{
+    display: block;
+    margin-right: 35px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .social-media{
+    margin-right: 55px;
   }
 }
