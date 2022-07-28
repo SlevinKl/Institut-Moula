@@ -4,6 +4,9 @@ class PrestationsController < ApplicationController
   before_action :user, only: %i[new create edit update destroy]
 
   def index
+    # for the background_color
+    @prestations_page = true
+
     @contact = Contact.new
     @prestations = Prestation.all
     @prestations_visage = @prestations.select{ |prestation| prestation.category == 'Visage' }

@@ -1,9 +1,10 @@
 .cards-prest {
   display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 616px));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 32px;
-  width: 850px;
+  width: 80%;
   margin: auto;
+  padding: 40px 20px;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -15,7 +16,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards-prest {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
   }
 }
 
@@ -23,6 +24,7 @@
 @media (min-width: 768px) {
   .cards-prest {
     grid-template-columns: 1fr 1fr;
+    width: 93%;
   }
 }
 
